@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LinkS</title>
+</head>
+<body>
+<button><a href = '{% url "index" %}'>URL Shorter</a>
+        </button>
+    </div>
+      <header><h2>Django Url Shortener</h2></header>
+     {% for link in links %}
+         <div>{{ link.link }}</div>
+         <div>SHORT LINK - http://127.0.0.1:8000/{{ link.link_id }}</div>
+
+     {% endfor %}
+
+</body>
+</html>
